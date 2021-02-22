@@ -15,5 +15,5 @@ def function(xFunc):
 
 
 if __name__ == '__main__':
-    x = float(input("Введите x: "))
-    print("f(" + str(x) + ") = {:.2e}".format(function(x)))
+    x = float(input())
+    print("{:.2e}".format(function(x)))

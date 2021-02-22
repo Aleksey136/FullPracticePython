@@ -7,6 +7,6 @@ def function(xFunc, yFunc):
 
 
 if __name__ == "__main__":
-    x = float(input("Введите число x: "))
-    y = float(input("Введите число y: "))
-    print("f(" + str(x) + ", " + str(y) + ") = {:.2e}".format(function(x, y)))
+    x = float(input())
+    y = float(input())
+    print("{:.2e}".format(function(x, y)))

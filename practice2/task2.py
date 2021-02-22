@@ -12,7 +12,5 @@ def function(line):
 
 
 if __name__ == '__main__':
-    inputUser = 0x78c3a3b4
-    print(function(inputUser))
-    inputUser = 0x8f6e6557
+    inputUser = int(input(), 16)
     print(function(inputUser))

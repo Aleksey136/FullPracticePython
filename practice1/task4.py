@@ -11,5 +11,5 @@ def function(nFunc):
 
 
 if __name__ == '__main__':
-    n = int(input("Введите n: "))
-    print("f(" + str(n) + ") = {:.2e}".format(function(n)))
+    n = int(input())
+    print("{:.2e}".format(function(n)))

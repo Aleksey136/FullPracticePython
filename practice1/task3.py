@@ -11,6 +11,6 @@ def function(nFunc, mFunc):
 
 
 if __name__ == '__main__':
-    n = int(input("Введите n: "))
-    m = int(input("Введите m: "))
-    print("f(" + str(n) + ", " + str(m) + ") = {:.2e}".format(function(n, m)))
+    n = int(input())
+    m = int(input())
+    print("{:.2e}".format(function(n, m)))
