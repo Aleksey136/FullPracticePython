@@ -1,5 +1,5 @@
 def function(line):
-    line2 = str(bin(line))
+    line2 = str(bin(int(line, 16)))
     while len(line2) != 34:
         line2 = "0b0" + line2[2:]
     A = line2[22:]
@@ -12,5 +12,5 @@ def function(line):
 
 
 if __name__ == '__main__':
-    inputUser = int(input(), 16)
+    inputUser = input()
     print(function(inputUser))

@@ -40,7 +40,7 @@ def f22(line):
     D = line2[3]
     E = line2[2]
     line2 = "0b" + D + A + B + E + C
-    return hex(int(line2, 2))
+    return str(hex(int(line2, 2)))
 
 
 def f23(matrix):
