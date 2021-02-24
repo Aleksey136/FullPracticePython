@@ -1,5 +1,5 @@
 def function(line):
-    line2 = str(bin(int(line, 16)))
+    line2 = str(bin(int(str(line), 16)))
     while len(line2) != 34:
         line2 = "0b0" + line2[2:]
     A = line2[22:]
@@ -8,7 +8,7 @@ def function(line):
     D = line2[3]
     E = line2[2]
     line2 = "0b" + D + A + B + E + C
-    return hex(int(line2, 2))
+    return str(hex(int(line2, 2)))
 
 
 if __name__ == '__main__':

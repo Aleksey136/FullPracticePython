@@ -31,16 +31,21 @@ def f21(x):
 
 
 def f22(line):
-    line2 = str(bin(int(line, 16)))
+    line2 = str(bin(int(str(line), 16)))
     while len(line2) != 34:
         line2 = "0b0" + line2[2:]
+        if len(line2) > 34:
+            break
     A = line2[22:]
     B = line2[10:22]
     C = line2[4:10]
     D = line2[3]
     E = line2[2]
-    line2 = "0b" + D + A + B + E + C
-    return str(hex(int(line2, 2)))
+    if len(line2) > 34:
+        return None
+    else:
+        line2 = "0b" + D + A + B + E + C
+        return str(hex(int(line2, 2)))
 
 
 def f23(matrix):
