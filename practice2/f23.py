@@ -36,7 +36,7 @@ def function(line: hex):
     line2 = line2 | (((line >> 12) & 0xfff) << 7)
     line2 = line2 | (((line >> 31) & 0x1) << 6)
     line2 = line2 | ((line >> 24) & 0x3f)
-    return hex(line2)
+    return line2
 
 
 def f23(matrix):
