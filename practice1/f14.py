@@ -1,4 +1,4 @@
-..import math
+import math
 
 
 def f11(xFunc, yFunc):
