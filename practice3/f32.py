@@ -26,7 +26,7 @@ class C32:
             return 6
 
         else:
-            return
+            return RuntimeError()
 
     def begin(self):
         if self.state == 'C':
@@ -47,7 +47,7 @@ class C32:
 
         elif self.state == 'D':
             self.state = 'A'
-            return 8
+            return 4
 
         else:
-            return
+            return RuntimeError()
