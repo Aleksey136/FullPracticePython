@@ -30,13 +30,13 @@ def f21(x):
     return output
 
 
-def function(line: hex):
+def f22(line):
     line2 = ((line >> 30) & 0x1) << 31
     line2 = line2 | ((line & 0x00000fff) << 19)
     line2 = line2 | (((line >> 12) & 0xfff) << 7)
     line2 = line2 | (((line >> 31) & 0x1) << 6)
     line2 = line2 | ((line >> 24) & 0x3f)
-    return line2
+    return int(line2)
 
 
 def f23(matrix):

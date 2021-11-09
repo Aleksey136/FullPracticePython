@@ -1,4 +1,4 @@
-def function(line: hex):
+def function(line):
     line2 = ((line >> 30) & 0x1) << 31
     line2 = line2 | ((line & 0x00000fff) << 19)
     line2 = line2 | (((line >> 12) & 0xfff) << 7)
